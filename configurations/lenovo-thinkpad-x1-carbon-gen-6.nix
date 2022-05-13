@@ -18,6 +18,7 @@ in {
     [
       ../hardware-configuration.nix
       ../common.nix
+      ../desktop.nix
       ../docker.nix
       ../dev.nix
       ../dev-flutter.nix
@@ -36,6 +37,12 @@ in {
       device = "/dev/disk/by-uuid/8073117a-81aa-41f5-bc5a-105240b5da14";
       fsType = "btrfs";
       options = [ "subvol=/@home" ];
+    };
+
+    "/repo" = {
+      device = "/dev/disk/by-uuid/8073117a-81aa-41f5-bc5a-105240b5da14";
+      fsType = "btrfs";
+      options = [ "subvol=/@repo" ];
     };
   };
 
