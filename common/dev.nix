@@ -6,6 +6,7 @@
     dotnet-sdk
     gitkraken
     jetbrains.datagrip
+    jetbrains.goland
     jetbrains.rider
     jetbrains.webstorm    
     mono

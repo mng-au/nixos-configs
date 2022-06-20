@@ -15,5 +15,5 @@
     android-udev-rules
   ];
 
-  users.users.user.extraGroups = ["adbusers"];
+  users.users.user.extraGroups = [ "adbusers" ];
 }

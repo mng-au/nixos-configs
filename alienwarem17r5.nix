@@ -9,11 +9,11 @@
       ./hardware/nvidia-offload.nix
 
       ./common/default.nix
+      ./common/dev.nix
       ./common/dnsmasq.nix
       ./common/fish.nix
       ./common/tailscale.nix
       ./common/steam.nix
-      ./common/work.nix
     ];
 
   boot.loader = {
@@ -100,7 +100,7 @@
   # hardware.pulseaudio.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+  services.xserver.libinput.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

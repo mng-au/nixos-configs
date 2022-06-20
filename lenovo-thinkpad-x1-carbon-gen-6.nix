@@ -16,12 +16,11 @@ let
 in {
   imports =
     [
-      ../hardware-configuration.nix
-      ../common.nix
-      ../desktop.nix
-      ../docker.nix
-      ../dev.nix
-      ../dev-flutter.nix
+      ./hardware-configuration.nix
+      ./default.nix
+      ./docker.nix
+      ./dev.nix
+      ./dev-flutter.nix
     ];
 
   # Use the systemd-boot EFI boot loader.

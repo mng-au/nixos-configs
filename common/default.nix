@@ -12,15 +12,19 @@
     enpass
     firefox
     glances
-    glxinfo
+    glxinfo    
     git
+    gnome.gnome-shell-extensions
+    gnome.gnome-tweaks
     nextcloud-client
     ntfs3g
     obsidian
     pciutils
     tmux
+    vlc
     virt-manager
     vscode
+    # thunderbird
   ];
 
   # List services that you want to enable:
