@@ -43,9 +43,7 @@
 
   hardware.enableRedistributableFirmware = true;
 
-  networking.hostName = "alienwarem17r5";
-
-  networking.nameservers = [ "127.0.0.1" ];
+  networking.hostName = "alienwarem17r5";  
 
   networking.networkmanager.enable = true;
 
