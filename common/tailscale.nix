@@ -9,7 +9,7 @@
     allowedUDPPorts = [ 3478 41641 ];
     # checkReversePath = "loose";
     enable = true;
-    trustedInterfaces = [ "tailscale0" ];
+    # trustedInterfaces = [ "tailscale0" ];
   };
 
   networking.nameservers = [ "127.0.0.1" ];

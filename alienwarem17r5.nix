@@ -9,8 +9,8 @@
       ./hardware/nvidia-offload.nix
 
       ./common/default.nix
+      ./common/barrier-server.nix
       ./common/dev.nix
-      ./common/dnsmasq.nix
       ./common/fish.nix
       ./common/tailscale.nix
       ./common/steam.nix
@@ -107,8 +107,6 @@
   # };
 
   networking.firewall = {
-    # allowedTCPPorts = [ 24800 ];
-    # allowedUDPPorts = [ 24800 ];
     enable = true;
   };
 
