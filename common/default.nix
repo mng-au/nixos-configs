@@ -16,6 +16,8 @@
     git
     gnome.gnome-shell-extensions
     gnome.gnome-tweaks
+    htop
+    ncdu
     nextcloud-client
     ntfs3g
     obsidian
@@ -27,9 +29,13 @@
     # thunderbird
   ];
 
-  # List services that you want to enable:
+  nixpkgs.config.allowUnfree = true;
 
-  # Enable the OpenSSH daemon.
+  programs.fish.enable = true;
+
+  i18n.defaultLocale = "en_AU.UTF-8";
+
+  # List services that you want to enable:
   # services.openssh.enable = true;
 
   time.hardwareClockInLocalTime = true;

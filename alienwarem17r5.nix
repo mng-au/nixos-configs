@@ -49,8 +49,6 @@
 
   networking.networkmanager.enable = true;
 
-  nixpkgs.config.allowUnfree = true;
-
   programs.light.enable = true;
 
   # Select internationalisation properties.

@@ -8,7 +8,7 @@
     jetbrains.datagrip
     jetbrains.goland
     jetbrains.rider
-    jetbrains.webstorm    
+    jetbrains.webstorm
     mono
     msbuild
     nodejs-slim-14_x
