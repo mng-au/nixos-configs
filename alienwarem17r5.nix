@@ -9,6 +9,7 @@
       ./hardware/nvidia-offload.nix
 
       ./common/default.nix
+      ./common/docker.nix
       ./common/barrier-server.nix
       ./common/dev.nix
       ./common/fish.nix
@@ -35,7 +36,7 @@
     "/work" = {
       device = "/dev/disk/by-uuid/c955c6c1-baf9-4b32-82ff-d44dfd66b499";
       fsType = "btrfs";
-      options = [ "subvol=/@work" ];
+      options = [ "subvol=/@work" "noauto" "noatime" ];
     };
   };
 
