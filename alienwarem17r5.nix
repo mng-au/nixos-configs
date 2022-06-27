@@ -20,6 +20,7 @@
   boot.loader = {
     efi = {
       canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot";
     };
 
     grub = {
@@ -27,6 +28,17 @@
       device = "nodev";
       efiSupport = true;
       enable = true;
+      extraEntries = ''
+        menuentry "Windows" {
+          insmod part_gpt
+          insmod fat
+          insmod search_fs_uuid
+          insmod chain
+          search --fs-uuid --set=root 280A2B940A2B5DD6
+          chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+        }
+      '';
+      version = 2;
     };
   };
 

@@ -13,20 +13,24 @@
     firefox
     glances
     glxinfo    
-    git
+    git    
     gnome.gnome-shell-extensions
     gnome.gnome-tweaks
+    gparted
     htop
     ncdu
+    neofetch
     nextcloud-client
+    # nix-index
     ntfs3g
     obsidian
     pciutils
     tmux
+    # thunderbird
     vlc
     virt-manager
     vscode
-    # thunderbird
+    zip    
   ];
 
   nixpkgs.config.allowUnfree = true;
