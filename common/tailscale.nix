@@ -32,10 +32,9 @@
 
       server=/tailscale.com/1.1.1.1
       server=100.74.157.60
+      server=1.1.1.1
     '';
   };
-
-  # networking.search = [ "proj.2501" ];
 
   services.tailscale.enable = true;
 }

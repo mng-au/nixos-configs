@@ -1,22 +1,18 @@
 # TODO:
-#   NPM Global
-#     https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
+#   - NPM Global
+#     See https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
+#   - Move unfree packages to nix shell when supported
+#     See https://github.com/NixOS/nixpkgs/issues/166220
 
 { pkgs ? import <nixpkgs> { } }:
 
 with pkgs; mkShell {
-
-  # dotnet-sdk
-  # mono
-  # msbuild
-
   name = "node-dev-shell";
 
-  buildInputs = [
-    gitkraken
-    jetbrains.datagrip
-    jetbrains.rider
-    jetbrains.webstorm
+  buildInputs = [        
+    dotnet-sdk
+    mono
+    msbuild
     nodejs-slim-14_x 
   ];
 
