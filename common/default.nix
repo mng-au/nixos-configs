@@ -7,26 +7,28 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     barrier
+    bitwarden
     dig
     brave
-    enpass
     firefox
     glances
-    glxinfo    
-    git    
+    glxinfo
+    git
     gnome.gnome-shell-extensions
     gnome.gnome-tweaks
     gparted
     htop
+    krita
+    librewolf
     ncdu
     neofetch
     nextcloud-client
-    # nix-index
     ntfs3g
     obsidian
     pciutils
     tmux
-    # thunderbird
+    thunderbird
+    veracrypt
     vlc
     virt-manager
     vscode
@@ -35,7 +37,7 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  programs.fish.enable = true;
+  programs.fish.enable = true;  
 
   i18n.defaultLocale = "en_AU.UTF-8";
 
